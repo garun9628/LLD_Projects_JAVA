@@ -11,7 +11,7 @@ import java.util.LinkedList;
 public class Game {
     private Board board;
     private Dice dice;
-    private Deque<Player> playerList = new LinkedList<>();
+    private final Deque<Player> playerList = new LinkedList<>();
     private Player winner;
 
     public Game() {
