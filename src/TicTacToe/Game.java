@@ -2,7 +2,6 @@ package TicTacToe;
 
 import TicTacToe.Model.*;
 
-import java.security.KeyPair;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
@@ -39,7 +38,7 @@ public class Game {
             Player currPlayer = playerList.removeFirst();
             // check if board has empty cell or not
             gameBoard.printBoard();
-            List<Pair<Integer, Integer>> freeSpaces = gameBoard.freeSpacesInBoard(gameBoard);
+            List<Pair<Integer, Integer>> freeSpaces = gameBoard.freeSpacesInBoard();
             if(freeSpaces.isEmpty()) {
                 flag = false;
                 break;

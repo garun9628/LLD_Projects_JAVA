@@ -15,7 +15,7 @@ public class Board {
         board = new PlayingPiece[size][size];
     }
 
-    public List<Pair<Integer, Integer>> freeSpacesInBoard(Board gameBoard) {
+    public List<Pair<Integer, Integer>> freeSpacesInBoard() {
         List<Pair<Integer, Integer>> freeCells = new ArrayList<>();
 
         for(int i = 0; i < size; i++) {
